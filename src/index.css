@@ -64,3 +64,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+.defscroll::-webkit-scrollbar {
+  display: none; /* Sembunyikan scrollbar di Chrome, Safari, Edge */
+}
