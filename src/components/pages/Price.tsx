@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import {
     Card,
@@ -75,12 +75,12 @@ export function Price() {
     };
 
     return (
-        <div className="flex justify-center items-center min-h-screen">
-            <Card className="max-w-screen max-h-lg">
+        <div className="flex items-center min-h-screen">
+            <Card className="w-full max-w-screen-lg">
                 <CardHeader>
                     <CardTitle>Mas Amba Product's</CardTitle>
                 </CardHeader>
-                <CardContent className="defscroll gap-4 max-h-96 overflow-y-scroll">
+                <CardContent className="defscroll gap-4 max-h-full overflow-y-scroll">
                     {myProduct.map((product) => (
                         <div className="flex mb-4" key={product.name}>
                             <div>
